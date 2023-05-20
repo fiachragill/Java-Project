@@ -1,0 +1,47 @@
+
+Introduction:
+-------------
+
+My Project is a simple social media simulator coded in Java, inspired by the ActivityPub protocol.
+It demonstrates basic social media actions such as making posts, following users, liking, and deleting content.
+The project showcases essential object-oriented programming principles, like classes, interfaces, and inheritance.
+
+Code Functionality:
+-------------------
+
+My Project uses a Client-Server structure with a ClientApp class that implements the ClientInterface.App interface.
+The ClientApp class has ClientInterface.Inbox and ClientInterface.Outbox objects for receiving and sending messages, 
+following ActivityPub's inbox and outbox concepts.
+
+The main features of My Project are created using classes like Person, StreamObject, and activity classes like CreateActivity,
+FollowActivity, LikeActivity, DeleteActivity, and UnfollowActivity. These activity classes implement the ClientInterface.Activity interface, 
+representing the different actions users can do on the platform, similar to ActivityPub's activities.
+
+Code Highlights:
+----------------
+
+Good use of interfaces: I made good use of interfaces (ClientInterface.App, ClientInterface.Activity, ClientInterface.Inbox, and ClientInterface.Outbox)
+to keep a common structure throughout the code, making it easier to maintain and extend.
+
+Solid activity classes: I created activity classes (CreateActivity, FollowActivity, LikeActivity, DeleteActivity, and UnfollowActivity)
+that clearly represent different user actions, which helps make the code more understandable and easier to modify.
+
+Flexible StreamObject class: I developed a versatile StreamObject class to handle various content types,
+showing that I considered adaptability and the potential for adding more content types in the future.
+
+Limitations:
+------------
+
+>No permanent data storage: My Project doesn't store data permanently, so all data is lost once the app is closed.
+>Limited ActivityPub implementation: My Project only includes a few of ActivityPub's features and is missing advanced options.
+
+Possible Future Implementations:
+--------------------------------
+
+>Persistent data storage: Add a database layer to save user data, activities, and user relationships, allowing the app to keep data between sessions.
+>Authentication and authorization: Integrate secure user authentication and access control to protect user data and ensure privacy.
+>Better user interface: Design a graphical user interface (GUI) or web-based interface to make the app easier to use and more visually appealing.
+>Include More ActivityPub features: Include additional ActivityPub activities and objects.
+>Documentation: Increase test coverage and write more thorough documentation to help the project be more maintainable and user-friendly for other developers.
+
+[sid:21444356]
